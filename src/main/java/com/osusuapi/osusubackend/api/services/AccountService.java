@@ -1,4 +1,4 @@
 package com.osusuapi.osusubackend.api.services;
 
-public interface AccountService {
+public class AccountService implements IAccountService {
 }

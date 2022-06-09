@@ -1,4 +1,4 @@
 package com.osusuapi.osusubackend.api.services;
 
-public interface MemberService {
+public class MemberService implements IMemberService {
 }

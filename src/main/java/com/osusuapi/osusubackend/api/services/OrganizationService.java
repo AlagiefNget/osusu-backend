@@ -1,4 +1,4 @@
 package com.osusuapi.osusubackend.api.services;
 
-public interface OrganizationService {
+public class OrganizationService implements IOrganizationService {
 }

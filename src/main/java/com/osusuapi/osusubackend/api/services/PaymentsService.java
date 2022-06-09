@@ -1,4 +1,4 @@
 package com.osusuapi.osusubackend.api.services;
 
-public interface PaymentsService {
+public class PaymentsService implements IPaymentsService {
 }
