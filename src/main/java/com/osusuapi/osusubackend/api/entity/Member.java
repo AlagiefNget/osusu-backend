@@ -1,6 +1,7 @@
 package com.osusuapi.osusubackend.api.entity;
 
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -9,9 +10,10 @@ import javax.validation.constraints.NotBlank;
 import java.util.List;
 
 @Entity
-@Data
+@Data // allows you to use Lombok
 @NoArgsConstructor
 @AllArgsConstructor
+//@Builder //check for Builder pattern
 public class Member {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -21,7 +23,7 @@ public class Member {
     private String name;
     private String phone;
     private String address;
-    @OneToMany
+    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Payments> payments;
     @ManyToOne
     private Organization organization;
