@@ -8,7 +8,6 @@ public abstract class Account {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)
     private Long id;
-
     private double balance;
 
     public Long getId() {
