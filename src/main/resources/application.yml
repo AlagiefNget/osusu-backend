@@ -1,10 +1,17 @@
 spring:
+  application:
+    name: USER-SERVICE
   datasource:
-    url: 
-    driverClassName: com.mysql.cj.jdbc.Driver
-    name:
-    password:
+    url: jdbc:mysql://localhost/osusu_app_db
+    username: root
+    password: "viruskilas"
   jpa:
+    properties:
+      hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
     hibernate:
       ddl-auto: update
-    show-sql: 'true'
+    show-sql: true
+
+logging:
+  level:
+    root: DEBUG
