@@ -8,6 +8,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class DashboardData {
-
+//    TODO: To be implemented
     public int numberOfMembers;
 }
